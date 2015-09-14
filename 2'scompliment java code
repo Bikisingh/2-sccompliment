@@ -14,6 +14,8 @@ public class Compliment2s {
 		for(int i=0;i<12;i++){
 			System.out.println(a[i]);
 		}
+		
+		//To find zero in Consecutive 0
 		int j=11;
 		while(a[j]==0){
 			b[j]=a[j];
@@ -21,6 +23,8 @@ public class Compliment2s {
 		}
 		b[j]=a[j];
 		j--;
+	
+		// take 1's Complement of remaining bit after first non zero number is encounter 
 		while(j>=0){
 			if(a[j]==0){
 				b[j]=1;
